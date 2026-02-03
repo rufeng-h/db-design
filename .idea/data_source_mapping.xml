@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/351c5686-b938-4f1a-8e7a-13eb498272f9/console.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
     <file url="file://$PROJECT_DIR$/04-sys_role.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
     <file url="file://$PROJECT_DIR$/05-rel_user_role.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
     <file url="file://$PROJECT_DIR$/06-sys_permission.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
