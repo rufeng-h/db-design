@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/351c5686-b938-4f1a-8e7a-13eb498272f9/console.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
+    <file url="file://$PROJECT_DIR$/04-sys_role.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
+    <file url="file://$PROJECT_DIR$/05-rel_user_role.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
+    <file url="file://$PROJECT_DIR$/06-sys_permission.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
+    <file url="file://$PROJECT_DIR$/07-rel_role_permission.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
+    <file url="file://$PROJECT_DIR$/biz_process_def.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
+    <file url="file://$PROJECT_DIR$/biz_process_node_def.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
+    <file url="file://$PROJECT_DIR$/biz_process_route_def.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
+    <file url="file://$PROJECT_DIR$/biz_std_plan.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
+    <file url="file://$PROJECT_DIR$/dict_std_type.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
+    <file url="file://$PROJECT_DIR$/sys_attatchment.sql" value="351c5686-b938-4f1a-8e7a-13eb498272f9" />
+  </component>
+</project>
