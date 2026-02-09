@@ -4,6 +4,7 @@ create table rel_user_role
     role_id    bigint      not null,
     primary key (user_id, role_id),
     created_at timestamptz not null default current_timestamp,
+    updated_at timestamptz NOT NULL DEFAULT current_timestamp,
     constraint fk_ur_user foreign key (user_id) references sys_user (id),
     constraint fk_ur_role foreign key (role_id) references sys_role (id)
 );

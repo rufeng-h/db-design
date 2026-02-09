@@ -8,6 +8,8 @@ CREATE TABLE biz_process_instance
 
     biz_id            varchar(64),
     biz_type          varchar(32),
+    biz_code          varchar(64),
+    biz_title         varchar(256),
 
     status            varchar(32),
 
@@ -34,11 +36,19 @@ COMMENT ON table biz_process_instance is '流程实例表';
 
 COMMENT ON COLUMN biz_process_instance.id IS '主键ID';
 COMMENT ON COLUMN biz_process_instance.process_def_id IS '流程定义ID';
-COMMENT ON COLUMN biz_process_instance.process_code IS '流程编码';
-COMMENT ON COLUMN biz_process_instance.process_version IS '流程版本';
+COMMENT ON COLUMN biz_process_instance.process_code IS '流程编码，冗余字段，历史快照';
+COMMENT ON COLUMN biz_process_instance.process_version IS '流程版本，冗余字段，历史快照';
 COMMENT ON COLUMN biz_process_instance.biz_id IS '业务ID';
 COMMENT ON COLUMN biz_process_instance.biz_type IS '业务类型';
-COMMENT ON COLUMN biz_process_instance.status IS '状态';
+COMMENT ON COLUMN biz_process_instance.biz_code IS '业务编码，如STD_PLAN-2026-001';
+COMMENT ON COLUMN biz_process_instance.biz_title IS '业务标题，如车辆部2026动车组轮对数据标准计划发布';
+COMMENT ON COLUMN biz_process_instance.status IS '状态，DRAFT        草稿
+RUNNING      流转中
+COMPLETED    正常结束
+REJECTED     被驳回结束
+WITHDRAWN    发起人撤回
+CANCELED     管理员作废
+SUSPENDED    挂起（可选）';
 COMMENT ON COLUMN biz_process_instance.current_node_code IS '当前节点编码';
 COMMENT ON COLUMN biz_process_instance.current_node_name IS '当前节点名称';
 COMMENT ON COLUMN biz_process_instance.start_user_id IS '发起用户ID';
