@@ -49,6 +49,14 @@ REJECTED     被驳回结束
 WITHDRAWN    发起人撤回
 CANCELED     管理员作废
 SUSPENDED    挂起（可选）';
+COMMENT ON COLUMN biz_process_instance.status IS '状态，DRAFT        草稿
+RUNNING      流转中
+COMPLETED    正常结束
+REJECTED     被驳回结束
+WITHDRAWN    发起人撤回
+CANCELED     管理员作废
+SUSPENDED    挂起（可选）
+';
 COMMENT ON COLUMN biz_process_instance.current_node_code IS '当前节点编码';
 COMMENT ON COLUMN biz_process_instance.current_node_name IS '当前节点名称';
 COMMENT ON COLUMN biz_process_instance.start_user_id IS '发起用户ID';
