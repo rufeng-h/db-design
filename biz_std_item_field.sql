@@ -5,14 +5,18 @@ create table biz_std_item_field
     --
     cat_id        bigint      not null,
     prop_id       bigint      NOT NULL,
-    filed_name    varchar(64) not null,
-    field_type    VARCHAR(32) NOT NULL, --
+    field_name    varchar(64) not null,
+    field_type    VARCHAR(32) NOT NULL default 'TEXT', --
+    description   text,
     required      BOOLEAN              DEFAULT FALSE,
     default_value VARCHAR(255)         default NULL,
     order_no      INT,
     config        jsonb,
+    is_enabled    boolean              default true,
+--     is_deleted    boolean              default false,
     created_at    timestamptz NOT NULL default CURRENT_TIMESTAMP,
-    updated_at    timestamptz not null default current_timestamp
+    updated_at    timestamptz not null default current_timestamp,
+    unique (cat_id, prop_id, field_name)
 );
 
 COMMENT ON COLUMN biz_std_item_field.field_type is 'text | textarea | number | date | datetime
