@@ -1,3 +1,5 @@
+-- 标准项与表头字段关联
+
 create table rel_std_item_field
 (
     item_id    bigint      not null,
